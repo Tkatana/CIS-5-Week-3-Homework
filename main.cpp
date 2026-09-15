@@ -1,36 +1,45 @@
-#include <iostream>
-#include <string>
 
-// Homework 3 — Your Name
+// Homework 3 — Tyler Quintana
 // CIS 5 Week 03 · Types & variables
 
+
+#include <iostream>
+#include <string>
 int main() {
+ 
+
   const int CURRENT_YEAR = 2026;
+  std::string first = "Tyler ";
+  std::string last = "Quintana ";
+  int age = 28;
+  double height = 5.10;
+  char initial = 'T';
+  bool student = 1; 
+  int credits = 10;
+  double gpa = 3.9;
 
-  // TODO: Lab 3 boxes — initialize on the same line
-  // std::string name = ...;
-  // int age = ...;
-  // double height_m = ...;
-  // char initial = ...;
-  // bool student = ...;
+std::cout << "=== About me ===\n";
+std::cout << "Name: " << first << last << "\n";
+std::cout << "Age: " << age << "\n";
+std::cout << "Height: " << height << "\n";
+std::cout << "Initial: " << initial << "\n";
+std::cout << "Student: " << student << "\n";
+std::cout << "Year: " << CURRENT_YEAR << "\n"; 
+std::cout << "Credits: " << credits << "\n";
+std::cout << "GPA: " << gpa << "\n";
+std::cout << " \n";
+std::cout << first << last << "is " << age << " and taking\n";
+std::cout << credits << " credits in the " << CURRENT_YEAR << " school year " <<  "with a ";
+std::cout << gpa << " GPA.\n";
 
-  // TODO: two more from this week's menu
-  // int credits = ...;
-  // double gpa = ...;
+// Integer is used because it is a value that can be changed and does not need the same precision as double
+// when I change the value of "credits" it is then reflected in what prints
+// Double is used because the calculation for GPA needs more precision than just the tenths place 
+  // char = "A"; would not compile char needs 'A' single quotes
+  // CURRENT_YEAR = 2027; would not compile cannot reassign const
 
-  // TODO: a comment that explains a type choice (why int, why double, or why const)
-
-  std::cout << "=== About me ===\n";
-  // TODO: labeled lines from the names
-  // TODO: one short paragraph from those same names — not leftover quotes
-
-  // TODO: change one value from a first choice. Comment the old value,
-  // the new value, and why the console followed.
-
-  // TODO: two lines that would not compile — leave them commented
-  // Example shape (write your own, with the reason):
-  // int age = "nineteen";   // would not compile — ...
-  // CURRENT_YEAR = 2027;    // would not compile — ...
+  
+ 
 
   return 0;
 }
